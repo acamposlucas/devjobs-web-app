@@ -1,0 +1,59 @@
+@use "src/app/scss/colors" as c;
+@use "src/app/scss/layout" as l;
+
+.filterByTitle {
+	align-items: center;
+	background-color: c.$white;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	display: flex;
+	padding-block: 1rem;
+	padding-inline: 1rem;
+
+	max-width: 70rem;
+	margin-inline: auto;
+
+	.form-control {
+		width: 100%;
+
+		input {
+			outline: none;
+
+			&::placeholder {
+				color: c.$neutral-700;
+			}
+		}
+	}
+
+	.filterIconBtn {
+		@media (min-width: l.$tablet) {
+			display: none;
+		}
+	}
+
+	.search__btn {
+		background-color: c.$violet-700;
+		border-radius: 6px;
+		padding-block: 0.875rem;
+		padding-inline: 0.875rem;
+		margin-inline-start: 1.5rem;
+
+		span {
+			display: none;
+
+			@media (min-width: l.$tablet) {
+				color: c.$white;
+				font-weight: bold;
+				display: inline;
+			}
+		}
+
+		svg {
+			fill: c.$white;
+
+			@media (min-width: l.$tablet) {
+				display: none;
+			}
+		}
+	}
+}

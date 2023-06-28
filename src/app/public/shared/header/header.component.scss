@@ -24,13 +24,19 @@ header {
 	display: flex;
 	justify-content: space-between;
 
-	max-width: 90rem;
+	max-width: 70rem;
 	margin-inline: auto;
+
+	margin-block-end: 1rem;
 
 	h1 {
 		color: c.$white;
 		font-weight: bold;
 	}
+}
+
+.search__filter__container {
+	margin-block-end: -8rem;
 }
 
 .color__slider__container {

@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @use "./css/preflight.css";
+@font-face {
+	font-family: "Kumbh Sans";
+	src: url("./assets/fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+}
+
+html {
+	font-family: "Kumbh Sans";
+}

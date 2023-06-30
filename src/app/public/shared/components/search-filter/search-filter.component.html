@@ -27,6 +27,34 @@
 		</svg>
 	</button>
 </div>
+
 <app-dialog *ngIf="modalService.isVisible">
-	<h1>Hello World</h1>
+	<div>
+		<form class="filterForm">
+			<div class="form-control">
+				<label for="locationFilter">
+					<input
+						type="text"
+						name="locationFilter"
+						id="locationFilter"
+						class="w-100"
+						placeholder="Filter by location..."
+					/>
+				</label>
+			</div>
+			<div class="divider" aria-hidden="true"></div>
+			<div class="form-control flex items-center">
+				<label for="fullTimeFilter"></label>
+				<input
+					type="checkbox"
+					name="fullTimeFilter"
+					id="fullTimeFilter"
+				/>
+				<span class="bold ms-4">Full Time Only</span>
+			</div>
+			<div class="btn__container">
+				<button type="submit">Search</button>
+			</div>
+		</form>
+	</div>
 </app-dialog>

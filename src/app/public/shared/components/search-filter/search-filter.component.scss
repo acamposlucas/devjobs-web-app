@@ -57,3 +57,41 @@
 		}
 	}
 }
+
+.filterForm {
+	.form-control {
+		padding: 1rem;
+
+		input {
+			outline: none;
+
+			&::placeholder {
+				color: c.$neutral-700;
+			}
+
+			&[type="checkbox"] {
+				height: 24px;
+				width: 24px;
+			}
+		}
+	}
+
+	.divider {
+		display: block;
+		height: 1px;
+		background-color: c.$neutral-500;
+	}
+
+	.btn__container {
+		padding: 1rem;
+	}
+
+	button[type="submit"] {
+		background-color: c.$violet-700;
+		border-radius: 6px;
+		color: c.$white;
+		font-weight: bold;
+		padding-block: 1rem;
+		width: 100%;
+	}
+}

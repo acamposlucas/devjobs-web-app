@@ -1,6 +1,11 @@
+@use "../../../scss/colors.scss" as c;
+
 :host {
 	dialog {
+		background-color: transparent;
 		padding: 0;
+		max-width: 30rem;
+		width: 100%;
 
 		&::backdrop {
 			background-color: rgba(23, 23, 23, 0.5);
@@ -9,7 +14,10 @@
 	}
 
 	.content {
-		width: 100%;
+		background-color: c.$white;
+		border-radius: 6px;
 		height: 100%;
+		width: 90%;
+		margin-inline: auto;
 	}
 }

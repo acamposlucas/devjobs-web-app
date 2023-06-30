@@ -1,0 +1,19 @@
+.bold {
+	font-weight: 700;
+}
+
+.flex {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.ms-4 {
+	margin-inline-start: 1rem;
+}
+
+.w-100 {
+	width: 100%;
+}

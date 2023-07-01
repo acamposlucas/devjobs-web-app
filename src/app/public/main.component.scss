@@ -1,0 +1,6 @@
+@use "../scss/colors.scss" as c;
+
+#app {
+	min-height: 100vh;
+	background-color: c.$neutral-200;
+}

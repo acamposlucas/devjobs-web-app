@@ -1,0 +1,43 @@
+@use "../../../../scss/colors.scss" as c;
+
+.card {
+	background-color: c.$white;
+	border-radius: 6px;
+	padding-inline: 2rem;
+	padding-block-start: 3rem;
+	padding-block-end: 2rem;
+
+	.content {
+		margin-block-end: 2.5rem;
+
+		.specs__container {
+			span {
+				color: c.$neutral-700;
+			}
+			span + span {
+				&:before {
+					background-color: c.$neutral-700;
+					border-radius: 9999px;
+					content: "";
+					display: inline-block;
+					margin-inline: 0.5rem;
+					height: 4px;
+					width: 4px;
+				}
+			}
+		}
+
+		h2 {
+			font-size: 1.25rem;
+		}
+
+		h3 {
+			color: c.$neutral-700;
+		}
+	}
+
+	.location {
+		font-size: 0.875rem;
+		color: c.$violet-700;
+	}
+}

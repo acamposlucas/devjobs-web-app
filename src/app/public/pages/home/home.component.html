@@ -1,5 +1,9 @@
 <main>
 	<section>
-		<app-job-card></app-job-card>
+		<ul class="list">
+			<li *ngFor="let job of jobList">
+				<app-job-card [job]="job"></app-job-card>
+			</li>
+		</ul>
 	</section>
 </main>

@@ -4,3 +4,10 @@ main {
 	max-width: 70rem;
 	margin-inline: auto;
 }
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 1rem;
+	row-gap: 3rem;
+}

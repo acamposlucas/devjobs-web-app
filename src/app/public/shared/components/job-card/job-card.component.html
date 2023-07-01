@@ -1,14 +1,14 @@
 <a routerLink="" class="card">
-	<div class="logo">
-		<img src="assets/logos/scoot.svg" alt="" />
+	<div class="logo" [ngStyle]="{ 'background-color': job.logoBackground }">
+		<img src="{{ job.logo }}" alt="{{ job.company }}" />
 	</div>
 	<div class="content">
 		<div class="specs__container">
-			<span>5h ago</span>
-			<span>Full Time</span>
+			<span>{{ job.postedAt }}</span>
+			<span>{{ job.contract }}</span>
 		</div>
-		<h2 class="bold">Senior Software Engineer</h2>
-		<h3>Scoot</h3>
+		<h2 class="bold">{{ job.position }}</h2>
+		<h3>{{ job.company }}</h3>
 	</div>
-	<span class="location bold">United Kingdom</span>
+	<span class="location bold">{{ job.location }}</span>
 </a>
